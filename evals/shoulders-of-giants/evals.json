@@ -1,0 +1,26 @@
+{
+  "skill_name": "shoulders-of-giants",
+  "evals": [
+    {
+      "id": 1,
+      "name": "trial-end-access-rule",
+      "prompt": "Dans Trace, mon app de suivi de muscu (abonnement mensuel, essai gratuit de 14 jours), je dois décider ce qui se passe quand l'essai se termine sans que l'utilisateur s'abonne : il garde son historique ? en lecture seule ? il peut encore logger ? Donne-moi une règle claire et justifiée que je puisse implémenter.",
+      "expected_output": "A rule grounded in what comparable fitness apps actually do, with links, the convention named, and any divergence justified.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "name": "postmortem-template",
+      "prompt": "On est 4 devs sur une petite SaaS et on vient d'avoir notre première vraie panne (la base est tombée 2h). Écris-moi un template markdown de postmortem qu'on réutilisera à chaque incident.",
+      "expected_output": "A template built from established postmortem practice, named and linked, adapted to a 4-person team.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "name": "version-bump-script",
+      "prompt": "I've got a tiny Node project (package.json only, no deps). Write me a dependency-free script `bump.js` that bumps the version in package.json: `node bump.js --minor`, `--major`, `--patch`, plus `--dry-run` to just print the new version. Keep it small.",
+      "expected_output": "Notices that the platform already does this (npm version, util.parseArgs) and builds on it instead of hand-rolling everything.",
+      "files": []
+    }
+  ]
+}
